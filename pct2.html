@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function schimb() {
+        var x = parseInt(document.getElementById('x').value);
+        var y = parseInt(document.getElementById('y').value);
+        var c = x;
+        x = y;
+        y = c;
+        document.getElementById('result').innerHTML = " x = " + x + " y = " + y;
+    }
+</script>
+<body>
+    <form action="">
+        <input id="x" type="number" value="1"><br>
+        <input id="y" type="number" value="1"><br>
+        <input type="button" value="Schimb" onclick="schimb()">
+    </form>
+    <div id="result"></div>
+</body>
+</html>
