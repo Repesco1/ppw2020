@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head> 
+<script>function addItem() {
+    var item = prompt("Please insert a text", "It will be added to the list");
+    if (item != null) {
+      var n = 0;
+      var ol = document.getElementById("myList");
+      var li = document.createElement("li");
+      ol.appendChild(li);
+      li.innerHTML += "item " + n + ':' + item;
+    } else {
+      document.getElementById("text").innerHTML = "&nbsp";
+    }
+  }</script>
+    
+<body>
+    
+</body>
+</html>
