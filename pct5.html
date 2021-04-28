@@ -5,21 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-</head> 
-<ol><li>Element1</li>
-  <li>Element2</li>
-  <li>Element3</li>
-  <li>Element4</li>
-  <li>Element5</li>
-  <li>Element6</li>
-  <li>Element7</li>
-  <li>Element8</li>
-  <li>Element9</li>
-  <li>Element10</li>
-</ol>>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
 <body>
-    
+    <div class="result2"></div>
+    <script type='text/javascript'>
+        var ro = [];
+
+        for (var j = 0; j <= 9; j++) {
+            ro.push('Element NR: '+ (j+1));
+            $('.result2').append(ro[j] + '<br />');
+        }
+    </script>
 </body>
 </html>
