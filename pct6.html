@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+    .cerc{
+        background-color: black;
+    }
+</style>
+</head>
+<body>
+  <div id='org_div1'></div>
+</body>
+
+<script>
+  document.body.onload = addElement;
+  var my_div = newDiv = null;
+
+  function addElement(j) {
+    var newDiv = document.createElement("div");
+newDiv.className="cerc"
+newDiv.innerHTML = "<p>Element</p>" ;
+    my_div = document.getElementById("org_div1");
+    document.body.insertBefore(newDiv, my_div);
+  }
+  for (let i = 1; i <= 10; i++)
+  {
+      addElement(i);
+      
+  }
+</script>
+</html>
